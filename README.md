@@ -1,3 +1,10 @@
+
+<div class="row">
+<img src="https://www.odoo.com/logo.png" width="200" class="column">
+<img src="https://linuxcontainers.org/static/img/containers.png" width="150" class="column">
+<img src="https://www.terraform.io/assets/images/logo-hashicorp-3f10732f.svg" width="150" class="column">
+</div>
+
 # Odoo image for 14.0 based in Ubuntu 20.04 LTS Focal
 
 This image is intended to be isolated from the postgresql container/machine.
