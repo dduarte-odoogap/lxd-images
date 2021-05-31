@@ -22,24 +22,18 @@ sudo apt-get update && sudo apt-get install -y gnupg software-properties-common 
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 ```
 
-Next you need to edit 14.0/odoo.yaml and point source folders to where you have them on your repo:
-(I could clone them in a script just it's slow and this is WIP)
+Next you need to update submodules:
 
-```yaml
-- path: /opt/odoo/14.0
-  generator: copy
-  source: /home/dd/git/odoo/14.0
-
-- path: /opt/odoo/oe14.0
-  generator: copy
-  source: /home/dd/git/oe/14.0
+```bash
+git submodule update --init --recursive
 ```
-
 
 Now you can build it:
 
 ```bash
 # just run build to build the lxd image
+# this will build the community edition, 
+# to change to enterprise just replace odoo.yaml by odoo-enterprise.yaml
 ./build.sh
 
 # terraform delete all containers

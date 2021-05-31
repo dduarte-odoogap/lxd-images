@@ -1,0 +1,8 @@
+[submodule "14.0/odoo"]
+	path = 14.0/odoo
+	url = https://github.com/odoo/odoo.git
+	branch = 14.0
+[submodule "14.0/odoo-enterprise"]
+	path = 14.0/odoo-enterprise
+	url = https://github.com/odoo/enterprise.git
+	branch = 14.0

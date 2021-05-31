@@ -1,5 +1,5 @@
 image:
-  name: odoo-ce-x86_64
+  name: odoo-ee-x86_64
   distribution: ubuntu
   release: focal
   description: |-
@@ -350,6 +350,10 @@ files:
   generator: copy
   source: 14.0/odoo
 
+- path: /opt/odoo/oe14.0
+  generator: copy
+  source: 14.0/odoo-enterprise
+
 - path: /var/lib/dbus/machine-id
   generator: remove
 
@@ -472,8 +476,8 @@ files:
   generator: dump
   content: |-
     [options]
-    addons_path = /opt/odoo/14.0/odoo/addons,/opt/odoo/14.0/addons,/opt/odoo/custom
-    admin_passwd = c35yun57inu6y56y4un546i0i67
+    addons_path = /opt/odoo/oe14.0/,/opt/odoo/14.0/odoo/addons,/opt/odoo/14.0/addons,/opt/odoo/custom
+    admin_passwd = jqoiwedjwidjiwjdijijdeijdiw
     # csv_internal_sep = ,
     data_dir = /opt/odoo/data
     db_host = pg.lxd
