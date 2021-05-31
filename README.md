@@ -1,8 +1,7 @@
-
+<img src="https://www.odoo.com/logo.png" width="250">
 <div class="row">
-<img src="https://www.odoo.com/logo.png" width="200" class="column">
-<img src="https://linuxcontainers.org/static/img/containers.png" width="150" class="column">
-<img src="https://www.terraform.io/assets/images/logo-hashicorp-3f10732f.svg" width="150" class="column">
+<img src="https://linuxcontainers.org/static/img/containers.png" width="80" class="col px-5">
+<img src="https://www.terraform.io/assets/images/logo-hashicorp-3f10732f.svg" width="220" class="col px-5">
 </div>
 
 # Odoo image for 14.0 based in Ubuntu 20.04 LTS Focal
